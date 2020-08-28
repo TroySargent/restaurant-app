@@ -2,8 +2,10 @@
 <h1>Available To Order</h1>
 {{#each burgers}}
 {{#unless this.devoured}}
+<div class="burger">
 <h2>{{this.burgerName}}</h2> 
 <button name="devourBtn" data-id="{{this.id}}">Devour</button>
+</div>
 {{/unless}}
 {{/each}}
 </div>

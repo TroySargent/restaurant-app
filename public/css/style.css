@@ -39,6 +39,10 @@ header {
     justify-self: center;
 }
 
+.burger {
+    display: block;
+    margin-bottom: 1em;
+}
 .available h2{
     display: inline-block;
     margin: 0;
