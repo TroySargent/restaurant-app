@@ -1,0 +1,14 @@
+<h1>Available to Order</h1>
+{{#each burgers}}
+{{#unless this.devoured}}
+<h2>{{this.burgerName}}</h2>
+<button name="devourBtn" data-id="{{this.id}}">Devour</button>
+{{/unless}}
+{{/each}}
+
+<h1>Out of Stock</h1>
+{{#each burgers}}
+{{#if this.devoured}}
+<h2>{{this.burgerName}}</h2>
+{{/if}}
+{{/each}}
