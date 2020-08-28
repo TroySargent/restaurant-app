@@ -1,0 +1,99 @@
+/* Reset CSS */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #032b52;
+}
+
+.container {
+    margin-right: auto; 
+    margin-left:  auto; 
+    max-width: 960px;
+    padding-right: 10px; 
+    padding-left:  10px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+/* header */
+header {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* grid system */
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/* left column */
+.available {
+    grid-column: 1;
+    justify-self: center;
+}
+
+.available h2{
+    display: inline-block;
+    margin: 0;
+ }
+
+ .available button {
+     display: inline-block;
+     margin: 0 1em;
+     padding: 0.5em;
+ }
+
+ /* right column */
+.unavailable {
+    grid-column: 2;
+    justify-self: center;
+}
+
+/* faded burgers */
+.faded {
+    opacity: 70%;
+}
+
+.unavailable input {
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em;
+}
+
+/* form */
+form {
+    text-align: center;
+}
+
+textarea {
+    width : 20em;
+}
+
+form input {
+    position: relative;
+    right: 5.8em;
+}
+/* button styling */
+button, input {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#4682B4;
+	border-radius:6px;
+	border:1px solid #4687bb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
