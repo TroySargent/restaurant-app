@@ -23,6 +23,9 @@ menuForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let burgerName = burgerInput.value;
     let newBurger = {burgerName: burgerName, devoured: false};
+    if (burgerName === '' || newBurger === ''){
+        return false;
+    }
     console.log(newBurger)
     fetch("/api/burgers/", {
         method: 'POST',
